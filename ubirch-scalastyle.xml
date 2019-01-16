@@ -9,7 +9,7 @@
     <check level="warning" class="org.scalastyle.file.HeaderMatchesChecker" enabled="true">
         <parameters>
             <parameter name="header"><![CDATA[/*
-Copyright (c)]]></parameter>
+ * Copyright (c)]]></parameter>
         </parameters>
     </check>
     <check level="warning" class="org.scalastyle.scalariform.SpacesAfterPlusChecker" enabled="true"/>
