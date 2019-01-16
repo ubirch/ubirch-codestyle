@@ -8,8 +8,8 @@
     </check>
     <check level="warning" class="org.scalastyle.file.HeaderMatchesChecker" enabled="true">
         <parameters>
-            <parameter name="header"><![CDATA[/*
- * Copyright (c)]]></parameter>
+            <parameter name="header"><![CDATA[/*]]></parameter>
+            <customMessage>Missing comment file header.</customMessage>
         </parameters>
     </check>
     <check level="warning" class="org.scalastyle.scalariform.SpacesAfterPlusChecker" enabled="true"/>
