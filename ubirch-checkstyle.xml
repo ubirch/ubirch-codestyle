@@ -102,6 +102,10 @@
     <!-- Require 4-space indentation (default value) -->
     <module name="Indentation">
       <property name="basicOffset" value="2"/>
+      <property name="caseIndent" value="2"/>
+      <property name="throwsIndent" value="2"/>
+      <property name="arrayInitIndent" value="2"/>
+      <property name="lineWrappingIndentation" value="2"/>
     </module>
     <!-- Whitespace should exist around all major tokens -->
     <module name="WhitespaceAround">
