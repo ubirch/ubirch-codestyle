@@ -33,7 +33,7 @@
   <module name="SuppressWarningsFilter"/>
 
   <!-- Check individual Java source files for specific rules -->
-  <module name="TreeWalker">
+  <module name="Checker">
     <!-- Maximum line length is 120 characters -->
     <module name="LineLength">
       <property name="max" value="120"/>
