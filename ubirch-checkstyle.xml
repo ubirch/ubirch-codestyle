@@ -33,16 +33,16 @@
   <module name="SuppressWarningsFilter"/>
 
   <!-- Check individual Java source files for specific rules -->
+  <module name="LineLength">
+    <property name="max" value="120"/>
+    <!-- Make exceptions for package names, imports, URLs, JavaDoc {@link} tags,
+         and very long method names -->
+    <property name="ignorePattern" value="^package.*|^import.*|http://|https://|@link|[ ]*\.?\S*"/>
+  </module>
+        
   <module name="TreeWalker">
     <!-- Maximum line length is 120 characters -->
-    <module name="LineLength">
-      <property name="max" value="120"/>
-      <!-- Make exceptions for package names, imports, URLs, JavaDoc {@link} tags,
-           and very long method names -->
-      <property name="ignorePattern"
-                value="^package.*|^import.*|http://|https://|@link|[ ]*\.?\S*"/>
-    </module>
-
+   
     <!-- Highlight any TODO or FIXME comments in info messages -->
     <module name="TodoComment">
       <property name="severity" value="info"/>
@@ -81,12 +81,10 @@
     <!-- Requirements for Javadocs for methods -->
     <module name="JavadocMethod">
       <!-- All public methods MUST HAVE Javadocs -->
-      <property name="scope" value="public"/>
-      <!-- Allow RuntimeExceptions to be undeclared -->
-      <property name="allowUndeclaredRTE" value="true"/>
+      <property name="accessModifiers" value="public"/>
       <!-- Allow params, throws and return tags to be optional -->
       <property name="allowMissingParamTags" value="true"/>
-      <property name="allowMissingThrowsTags" value="true"/>
+      <property name="validateThrows" value="false"/>
       <property name="allowMissingReturnTag" value="true"/>
     </module>
 
